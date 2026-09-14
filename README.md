@@ -6,19 +6,19 @@
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-تطبيق ويب تفاعلي ومبسط مُصمم للتنبؤ بإنتاجية المحاصيل الزراعية (بالطن / هكتار) اعتماداً على العوامل المناخية والبيئية ونوع التربة والممارسات الزراعية.
+An interactive web application designed to predict agricultural crop yield (in Tons per Hectare) based on climatic conditions, soil types, environmental factors, and farming practices.
 
 ---
 
 ## 📌 Features
 
-* **واجهة تفاعلية عبر Streamlit:** تمكّن المستخدم من تعديل المدخلات ورؤية النتائج فوراً.
-* **تغطية شاملة للمتغيرات:**
-  * **البيانات المكانية والتربة:** المنطقة (`Region`) ونوع التربة (`Soil_Type`).
-  * **أنواع المحاصيل:** القطن، الأرز، الشعير، فول الصويا، والقمح.
-  * **المناخ والطقس:** درجة الحرارة، معدل الأمطار، وحالة الطقس (`Sunny`, `Rainy`, إلخ).
-  * **الممارسات الزراعية:** استخدام الأسمدة، الري، وعدد الأيام حتى الحصاد[cite: 1].
-* **تنبؤ فوري:** يعتمد على نموذج تعلم آلة مُدرب مسبقاً (`crop_model.pkl`) ويتم تحميلة باستخدام `joblib`[cite: 1].
+* **Interactive Interface:** Built with Streamlit to allow real-time parameter tuning and instant yield predictions.
+* **Comprehensive Feature Inputs:**
+  * **Geographical & Soil Data:** Region selection (`Region`) and soil classification (`Soil_Type`).
+  * **Crop Diversity:** Support for Cotton, Rice, Barley, Soybean, and Wheat.
+  * **Climatic Parameters:** Temperature, rainfall levels, and general weather condition (`Sunny`, `Rainy`, etc.).
+  * **Farming Practices:** Fertilizer application, irrigation usage, and days to harvest[cite: 1].
+* **Instant Inference:** Utilizes a pre-trained machine learning model (`crop_model.pkl`) loaded efficiently using `joblib`[cite: 1].
 
 ---
 
