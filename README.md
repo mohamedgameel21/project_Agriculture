@@ -1,37 +1,32 @@
-# 🌾 Agricultural Yield Prediction System
+# 🌾 Crop Yield Prediction Web App
 
-An end-to-end Machine Learning & Streamlit web application designed to predict crop yield based on environmental, soil, and agricultural parameters.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Latest-150458.svg)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+تطبيق ويب تفاعلي ومبسط مُصمم للتنبؤ بإنتاجية المحاصيل الزراعية (بالطن / هكتار) اعتماداً على العوامل المناخية والبيئية ونوع التربة والممارسات الزراعية.
 
 ---
 
 ## 📌 Features
 
-* 📊 **Data Preprocessing & EDA:** Advanced outlier handling (IQR), categorical encoding, and feature scaling.
-* 🤖 **Predictive ML Model:** Optimized machine learning models trained to provide accurate yield estimations.
-* 📦 **Git LFS Integration:** Large model artifacts are efficiently tracked and managed via Git LFS.
-* 💻 **Interactive Dashboard:** User-friendly UI built with Streamlit for real-time inference.
+* **واجهة تفاعلية عبر Streamlit:** تمكّن المستخدم من تعديل المدخلات ورؤية النتائج فوراً.
+* **تغطية شاملة للمتغيرات:**
+  * **البيانات المكانية والتربة:** المنطقة (`Region`) ونوع التربة (`Soil_Type`).
+  * **أنواع المحاصيل:** القطن، الأرز، الشعير، فول الصويا، والقمح.
+  * **المناخ والطقس:** درجة الحرارة، معدل الأمطار، وحالة الطقس (`Sunny`, `Rainy`, إلخ).
+  * **الممارسات الزراعية:** استخدام الأسمدة، الري، وعدد الأيام حتى الحصاد[cite: 1].
+* **تنبؤ فوري:** يعتمد على نموذج تعلم آلة مُدرب مسبقاً (`crop_model.pkl`) ويتم تحميلة باستخدام `joblib`[cite: 1].
 
 ---
 
-## 🛠️ Tech Stack
+## 📁 Repository Structure
 
-* **Language:** Python 3.x
-* **Data Manipulation:** Pandas, NumPy
-* **Machine Learning:** Scikit-Learn
-* **Web Framework:** Streamlit
-* **Version Control:** Git & Git LFS, GitHub
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure you have `Git` and `Python 3.8+` installed on your system.
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/mohamedgameel21/project_Agriculture.git](https://github.com/mohamedgameel21/project_Agriculture.git)
-   cd project_Agriculture
+```text
+├── app.py              # Streamlit Web Application interface
+├── train_model.py      # Script to train and save the ML model
+├── crop_model.pkl      # Trained machine learning model file
+├── requirements.txt    # Required Python dependencies
+└── README.md           # Project documentation
