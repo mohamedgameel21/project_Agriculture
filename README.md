@@ -62,6 +62,7 @@ streamlit run app.py
 The application will automatically open in your browser at http://localhost:8501[cite: 1].
 
 💻 Tech Stack
+
 Python - Core programming language.
 
 Streamlit - Interactive web deployment framework[cite: 1].
@@ -71,4 +72,5 @@ Pandas - Data structures and input manipulation[cite: 1].
 Scikit-Learn / Joblib - Machine learning modeling and artifact loading[cite: 1].
 
 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome! Feel free to submit a Pull Request or open an Issue.
